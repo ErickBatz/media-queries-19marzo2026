@@ -1,0 +1,167 @@
+.contenedor{
+    max-width: 1024px;
+    margin: auto;
+    display: grid;
+}
+header{
+    background-color: rgb(223, 104, 58);
+    height: 15vh;
+}
+nav{
+    background-color: rgb(122, 150, 94);
+    height: 10vh;
+}
+.contenedor1{
+    display: grid;
+    grid-template-areas: 
+    "mision vision";
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 20vh;
+}
+.section1{
+    background-color: cornflowerblue;
+    grid-area: mision;
+}
+.section2{
+    background-color: darkorchid;
+    grid-area: vision;
+}
+.section3{
+background: #ca7a44;
+height: 40vh;
+}
+.section4{
+    background: #ecece4;
+    height: 40vh;
+}
+.verde{
+    background-color: rgb(88, 190, 88);
+}
+
+
+.contenedor2{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh 15vh;
+}
+.img1{
+    grid-area: img1;
+    background-color: green;
+    
+}
+.img2{
+    grid-area: img2;
+    background-color: rgb(64, 78, 78);
+    
+}
+.img3{
+    grid-area: img3;
+     background-color: rgb(65, 104, 84);
+    
+}
+.img4{
+    grid-area: img4;
+     background-color: rgb(135, 172, 67);
+    
+}
+.img5{
+    grid-area: img5;
+     background-color: rgb(166, 213, 214);
+    
+}
+.img6{
+    grid-area: img6;
+     background-color: rgb(148, 181, 182);
+    
+}
+footer{
+    background-color: rgb(209, 207, 92);
+    height: 5vh;
+}
+
+/*-----------------------------------------*/
+@media(max-width:768px) {
+
+    .contenedor{
+    max-width: 768px;
+    margin: auto;
+    display: grid;
+}
+header{
+    background-color: rgb(223, 104, 58);
+    height: 10vh;
+}
+nav{
+    background-color: rgb(122, 150, 94);
+    height: 5vh;
+}
+.contenedor1{
+    display: grid;
+    grid-template-areas: 
+    "mision"
+    "vision";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh;
+}
+.section1{
+    background-color: cornflowerblue;
+    grid-area: mision;
+}
+.section2{
+    background-color: darkorchid;
+    grid-area: vision;
+}
+.section3{
+background: #ca7a44;
+height: 20vh;
+}
+.section4{
+    background: #ecece4;
+    height: 20vh;
+}
+.verde{
+    background-color: rgb(88, 190, 88);
+}
+
+.contenedor2{
+    display: grid;
+    grid-template-areas: 
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh;
+}
+.img1{
+    grid-area: img1;
+    
+}
+.img2{
+    grid-area: img2;
+    
+}
+.img3{
+    grid-area: img3;
+    
+}
+.img4{
+    grid-area: img4;
+    
+}
+.img5{
+    grid-area: img5;
+    
+}
+.img6{
+    grid-area: img6;
+    
+}
+
+footer{
+    background-color: rgb(209, 207, 92);
+    height: 5vh;
+}
+}
